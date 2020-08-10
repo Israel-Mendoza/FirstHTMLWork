@@ -17,13 +17,29 @@
 
     <form action="mailto:xander_irsl@hotmail.com" method="post" enctype="text/plain">
         <label>Your name:</label>
-        <input type="text" name="userName" value="John Doe"><br><br>
+        <input type="text" name="userName" value="" placeholder="Your name" required><br><br>
 
-        <label>Your email</label>
-        <input type="email" name="userEmail" value="John.Doe@email.com"><br><br>
+        <label>Your email:</label>
+        <input type="email" name="userEmail" value="" placeholder="example@email.com" required><br><br>
 
+        <label>Your gender: </label><br><br>
+        <label>Male</label><input type="radio" name="userGender" value="male" required>
+        <label>Female</label><input type="radio" name="userGender" value="female">
+        <label>Rather not say</label><input type="radio" name="userGender" value="other"><br><br>
+
+        <label>What do you think of my website?</label><br>
+        <select name="userOpinion" required>
+            <option value="5">It's the best I've seen!</option>
+            <option value="4">It's great!</option>
+            <option value="3">It's OK</option>
+            <option value="2">It's bad</option>
+            <option value="1">Worst thing I've seen in my life!</option>
+        </select>
+
+        <br><br>
         <label>Your message: </label><br>
-        <textarea name="userMessage" id="" cols="50" rows="10">What is this?</textarea><br><br>
+        <textarea name="userMessage" id="" cols="50" rows="10" placeholder="Enter your message here..."
+            required></textarea><br><br>
 
         <input type="submit">
 
